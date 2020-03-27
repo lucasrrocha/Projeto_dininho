@@ -1,0 +1,10 @@
+.content-short {
+    font-size: 12px;
+    color: var(--color-second);
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer-dino > .content-short {
+    margin-bottom: var(--gap-medium);
+}

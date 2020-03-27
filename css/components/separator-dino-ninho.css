@@ -1,0 +1,31 @@
+.separator-dino-ninho {
+    --widht-ninho: 25px;
+    background-image: url(/img/ninho_final.png);
+    background-size: auto 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--gap-medium);
+    margin-bottom: var(--gap-medium);
+}
+
+.separator-dino-ninho::before,
+.separator-dino-ninho::after {
+    content: '';
+    width: calc(50% - var(--widht-ninho) - var(--gap-very-small));
+    height: 4px;
+    background-color: var(--color-first);
+}
+
+.separator-dino-nihno::before {
+    /* border-radius: top/left top/right bottom/left bottom/rigth; */
+    border-radius: 0 2px 2px 0;
+}
+
+.separator-dino-ninho::after {
+    border-radius: 2px 0 0 2px;
+}
