@@ -9,5 +9,14 @@
     color: var(--color-first);
     text-decoration: none;
     margin: var(--gap-medium) auto;
+    font-size: 20px;
+    transition: transform 200ms linear;
 }
 
+.button-dino:hover {
+    transform: scale(1.05);
+}
+
+.button-dino > .content {
+    transform: translateY(-2px);
+}
