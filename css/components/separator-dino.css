@@ -1,5 +1,6 @@
 .separator-dino {
     --half-widht-egg: 11px;
+    --half-widht-eggs: 30px;
     background-image: url(/img/egg.png);
     background-size: auto 22px;
     background-repeat: no-repeat;
@@ -13,12 +14,23 @@
     margin-bottom: var(--gap-medium);
 }
 
+.separator-dino.-all {
+    background-image: url(/img/ninho_final.png);
+    background-size: 60px auto;
+    height: 60px;
+
+}
+
 .separator-dino::before,
 .separator-dino::after {
     content: '';
     width: calc(50% - var(--half-widht-egg) - var(--gap-very-small));
     height: 4px;
     background-color: var(--color-first);
+}
+.separator-dino.-all::before,
+.separator-dino.-all::after {
+    width: calc(50% - var(--half-widht-eggs) - var(--gap-very-small));
 }
 
 .separator-dino::before {

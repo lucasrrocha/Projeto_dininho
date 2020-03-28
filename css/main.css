@@ -11,9 +11,10 @@
 @import './components/subtitle-dino.css';
 @import './components/list-dino.css';
 @import './components/separator-dino.css';
-@import './components/separator-dino-ninho.css';
 @import './components/content-short.css';
 @import './components/social-media.css';
+@import './components/video-dino.css';
+@import './components/button-dino.css';
 
 @import './containers/footer-dino.css';
 @import './containers/section-dino.css';
