@@ -6,9 +6,9 @@
     height: 42%;
     min-height: 275px;
     background: url('../../img/floor.png') bottom center / auto 180px repeat no-repeat, 
-                url('../../img/montains1.png') bottom center / contain no-repeat,
-                url('../../img/montains2.png') bottom center / contain no-repeat,
-                url('../../img/sky.png') top center / contain no-repeat var(--color-sky);
+                url('../../img/montains1.png') bottom center / cover no-repeat,
+                url('../../img/montains2.png') bottom center / cover no-repeat,
+                url('../../img/sky.png') top center / cover no-repeat var(--color-sky);
 }
 .header-dino > .logo {
     position: absolute;
@@ -23,4 +23,13 @@
     position: absolute;
     bottom: calc( var(--gap-big) + 90px);
     width: 30px;
+}
+
+@media (min-width: 600px) {
+    .header-dino {
+        background: url('../../img/floor.png') bottom center / auto 180px repeat no-repeat, 
+        url('../../img/montains1.png') bottom center / contain no-repeat,
+        url('../../img/montains2.png') bottom center / contain no-repeat,
+        url('../../img/sky.png') top center / contain no-repeat var(--color-sky);
+    }
 }
