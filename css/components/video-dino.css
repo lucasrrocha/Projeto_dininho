@@ -33,7 +33,8 @@
     height: 70px;
     background-color: var(--color-first-light);
     border-radius: 50%; 
-    text-indent: -9999px;
+    /* text-indent: -9999px;  Substitui por font-size 0 porque no chrome não funcionou */
+    font-size: 0px;
     transition: opacity 200ms linear;
 }
 

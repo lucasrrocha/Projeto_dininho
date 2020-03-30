@@ -1,0 +1,8 @@
+@media (min-width: 600px){ 
+    .decoration-dino {
+        margin-left: 30%;
+    }
+    .decoration-dino span {
+        font-weight: bold;
+    }
+}

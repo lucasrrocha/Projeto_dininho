@@ -41,3 +41,28 @@
 .separator-dino::after {
     border-radius: 2px 0 0 2px;
 }
+
+@media (min-width: 600px){
+    .separator-dino {
+        height: 44px;
+        background-size: auto 44px;
+    }
+
+    .separator-dino.-all {
+        background-size: auto 70px;
+        height: 70px;
+    }
+    
+    .separator-dino::after,
+    .separator-dino::before {
+        width: calc(50% - var(--half-widht-egg) - var(--gap-very-small));
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .separator-dino.-all::after,
+    .separator-dino.-all::before {
+        width: calc(50% - var(--half-widht-eggs) - var(--gap-very-small) + 5%);
+        margin-left: 5%;
+        margin-right: 5%; 
+    }
+}

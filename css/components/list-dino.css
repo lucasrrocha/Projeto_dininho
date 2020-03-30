@@ -6,3 +6,9 @@
 .list-dino  .item {
     margin-bottom: var(--gap-smaller);    
 }
+
+@media (min-width: 600px) {
+    .list-dino {
+        text-align: center;
+    }
+}
