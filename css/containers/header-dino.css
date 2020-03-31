@@ -33,3 +33,18 @@
         url('../../img/sky.png') top center / contain no-repeat var(--color-sky);
     }
 }
+
+@media (min-width: 900px){
+    .header-dino {
+        height: 550px;
+    }
+    .header-dino > .dininho {
+        position: absolute;
+        bottom: calc( var(--gap-big) + 120px);
+        width: 50px;
+    }
+    .header-dino > .logo {
+        max-width: 504px;
+        top: 64px;
+    }
+}
